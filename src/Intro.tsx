@@ -5,7 +5,7 @@ const Intro = () => (
     <Text mb={4}>Howdy!</Text>
     <Text mb={4}>
       My name is <b>Iván Mayoral</b>, I am a <b>Senior Software Engineer</b>{" "}
-      with <b>10+</b> years of professional experience in Computer Science.
+      with over <b>10</b> years of professional experience in Computer Science.
     </Text>
     <Text mb={4}>
       I live in <b>Mexico City</b> and have been working remotely for about 9
