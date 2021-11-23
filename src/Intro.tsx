@@ -10,16 +10,14 @@ const Intro = () => (
     <Text mb={4}>
       I live in <b>Mexico City</b> and have been working remotely for about 9
       years as a contractor for US Tech Companies:{" "}
-      <b>
-        <Link href="https://gumgum.com/">GumGum</Link>
-      </b>{" "}
-      and{" "}
+      <Link href="https://gumgum.com/">GumGum</Link> and{" "}
       <b>
         <Link href="https://hellopearl.com">Pearl</Link>
       </b>
     </Text>
     <Text mb={4}>
-      I am passionate about Free Software, Linux, UI Development, Accesibility, and React.
+      I am passionate about Free Software, Linux, UI Development, Accesibility,
+      and React.
     </Text>
     <Text mb={4}>
       My main programming languages are JavaScript (TypeScript {`<3`}), PHP7,
@@ -28,30 +26,20 @@ const Intro = () => (
     </Text>
     <Text mb={4}>
       This are some of the{" "}
-      <b>
-        <Link href="https://github.com/ivanm">Open Source</Link>
-      </b>{" "}
-      projects that I'm currently working on my free time:
+      <Link href="https://github.com/ivanm">Open Source</Link> projects that I'm
+      currently working on my free time:
     </Text>
     <UnorderedList>
       <ListItem>
-        <b>
-          <Link href="http://coinlog.vaan.dev">coinlog:</Link>
-        </b>{" "}
-        A configurable cryptocurrency price tracker.
+        <Link href="http://coinlog.vaan.dev">coinlog:</Link>A configurable
+        cryptocurrency price tracker.
       </ListItem>
       <ListItem>
-        <b>
-          <Link href="http://nft-explorer.vaan.dev">nft-explorer:</Link>
-        </b>{" "}
-        An visualizarion tool for NFT Collections. An alternative to OpenSea
+        <Link href="http://nft-explorer.vaan.dev">nft-explorer:</Link> An
+        visualizarion tool for NFT Collections. An alternative to OpenSea
       </ListItem>
       <ListItem>
-        <b>
-          <Link href="https://github.com/ivanm/nft-autotool">
-            nft-autotool:
-          </Link>
-        </b>{" "}
+        <Link href="https://github.com/ivanm/nft-autotool">nft-autotool:</Link>{" "}
         NFT Genereator script using layers with different rarities.
       </ListItem>
     </UnorderedList>
