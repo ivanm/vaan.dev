@@ -16,7 +16,7 @@ const Intro = () => (
       </b>
     </Text>
     <Text mb={4}>
-      I am passionate about Free Software, Linux, UI Development, Accesibility,
+      I am passionate about Free Software, Linux, UI/UX, Accesibility,
       and React.
     </Text>
     <Text mb={4}>
@@ -35,8 +35,8 @@ const Intro = () => (
         cryptocurrency price tracker.
       </ListItem>
       <ListItem>
-        <Link isExternal href="http://nft-explorer.vaan.dev">nft-explorer:</Link> An
-        visualizarion tool for NFT Collections. An alternative to OpenSea
+        <Link isExternal href="http://nft-explorer.vaan.dev">nft-explorer:</Link> A
+        visualization tool for NFT Collections. An alternative to OpenSea.
       </ListItem>
       <ListItem>
         <Link isExternal href="https://github.com/ivanm/nft-autotool">nft-autotool:</Link>{" "}
