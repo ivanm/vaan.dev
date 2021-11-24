@@ -6,10 +6,10 @@ import theme from "./theme";
 
 export const App = () => (
   <ChakraProvider theme={theme}>
-    <Box fontSize="xl">
-      <Grid minH="100vh" p={3}>
-        <ColorModeSwitcher justifySelf="flex-end" />
-        <Flex justify="center" width="100%">
+    <Box fontSize="md">
+      <Grid minH="100vh" pr={10} pl={10} templateRows="80px 1fr">
+        <ColorModeSwitcher mt={2}justifySelf="flex-end" />
+        <Flex justify="center" mt={10} width="100%">
           <Intro />
         </Flex>
       </Grid>

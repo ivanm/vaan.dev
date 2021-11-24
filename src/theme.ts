@@ -6,6 +6,9 @@ import {
 } from "@chakra-ui/react";
 import { mode, Styles } from "@chakra-ui/theme-tools";
 
+const DARK_LINK_COLOR = "#489d4f";
+const LIGHT_LINK_COLOR = "#267a24";
+
 const config: ThemeConfig = {
   initialColorMode: "dark",
   useSystemColorMode: false
@@ -37,8 +40,24 @@ const colors: Colors = {
 const components: ThemeComponents = {
   Link: {
     baseStyle: ({ colorMode }) => ({
-      color: colorMode === "dark" ? "#489d4f" : "#267a24",
-      fontWeight: "bold"
+      color: colorMode === "dark" ? DARK_LINK_COLOR : LIGHT_LINK_COLOR,
+      fontWeight: "bold",
+      _focus: {
+        boxShadow:
+          colorMode === "dark"
+            ? `${DARK_LINK_COLOR} 0px 0px 0px 3px`
+            : `${LIGHT_LINK_COLOR} 0px 0px 0px 3px`
+      }
+    })
+  },
+  Button: {
+    baseStyle: ({ colorMode }) => ({
+      _focus: {
+        boxShadow:
+          colorMode === "dark"
+            ? `${DARK_LINK_COLOR} 0px 0px 0px 3px`
+            : `${LIGHT_LINK_COLOR} 0px 0px 0px 3px`
+      }
     })
   }
 };
