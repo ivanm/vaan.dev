@@ -31,16 +31,16 @@ const Intro = () => (
     </Text>
     <UnorderedList>
       <ListItem>
-        <Link isExternal href="http://coinlog.vaan.dev">coinlog:</Link>A configurable
-        cryptocurrency price tracker.
-      </ListItem>
-      <ListItem>
         <Link isExternal href="http://nft-explorer.vaan.dev">nft-explorer:</Link> A
         visualization tool for NFT Collections. An alternative to OpenSea.
       </ListItem>
       <ListItem>
         <Link isExternal href="https://github.com/ivanm/nft-autotool">nft-autotool:</Link>{" "}
         NFT Genereator script using layers with different rarities.
+      </ListItem>
+      <ListItem>
+        <Link isExternal href="http://coinlog.vaan.dev">coinlog (alpha):</Link>A configurable
+        cryptocurrency price tracker.
       </ListItem>
     </UnorderedList>
   </Flex>
