@@ -1,8 +1,8 @@
 import { Text, Flex, UnorderedList, ListItem, Link } from "@chakra-ui/react";
 
 const Intro = () => (
-  <Flex maxWidth="700px" direction="column">
-    <Text mb={4}>Howdy!</Text>
+  <Flex pl={10} pr={10} direction="column" mt={12}>
+    <Text fontSize={18} mb={4}>Howdy!</Text>
     <Text mb={4}>
       My name is <b>Iván Mayoral</b>, I am a <b>Senior Software Engineer</b>{" "}
       with over <b>10</b> years of professional experience in Computer Science.
