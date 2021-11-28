@@ -1,28 +1,37 @@
-import { Flex, Link, useColorMode } from "@chakra-ui/react";
+import { Flex, useColorMode } from "@chakra-ui/react";
+import { Location } from "@reach/router";
+
+import LeftMenuLink from "./LeftMenuLink";
 
 const LeftMenu = () => {
   const { colorMode } = useColorMode();
   return (
-    <Flex
-      direction="column"
-      align="center"
-      pt="105px"
-      bg={colorMode === "dark" ? "black" : "gray.200"}
-      borderRight="1px"
-      borderColor="gray.700"
-    >
-      <Flex>
-        <Flex align="center" fontSize="10" mb={2} mr={2}>
-          ᐅ
+    <Location>
+      {({ location }) => (
+        <Flex
+          fontSize={{ base: 10, sm: 15 }}
+          pl={{ base: 3, sm: 8 }}
+          direction="column"
+          pt="105px"
+          bg={colorMode === "dark" ? "black" : "gray.50"}
+          borderRight="1px"
+          borderColor={colorMode === "dark" ? "gray.800" : "gray.100"}
+        >
+          <LeftMenuLink to="/" location={location}>
+            About
+          </LeftMenuLink>
+          <LeftMenuLink to="/projects" location={location}>
+            Projects
+          </LeftMenuLink>
+          <LeftMenuLink to="/resume" location={location}>
+            Resume
+          </LeftMenuLink>
+          <LeftMenuLink to="/contact" location={location}>
+            Contact
+          </LeftMenuLink>
         </Flex>
-        <Link color={colorMode === "dark" ? "white" : "black"} mb={2}>
-          About
-        </Link>
-      </Flex>
-      <Link mb={2}>Projects</Link>
-      <Link mb={2}>Resume</Link>
-      <Link mb={2}>Contact</Link>
-    </Flex>
+      )}
+    </Location>
   );
 };
 

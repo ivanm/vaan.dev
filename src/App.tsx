@@ -1,47 +1,35 @@
-import * as React from "react";
-import {
-  ChakraProvider,
-  Box,
-  Button,
-  Grid,
-  Flex,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem
-} from "@chakra-ui/react";
-import { ChevronDownIcon } from "@chakra-ui/icons";
-import { ColorModeSwitcher } from "./ColorModeSwitcher";
+import { ChakraProvider, Box, Grid, Flex } from "@chakra-ui/react";
+import { Router } from "@reach/router";
 import Intro from "./Intro";
+import Projects from "./Projects";
 import LeftMenu from "./LeftMenu";
+import TopButtons from "./TopButtons";
 import theme from "./theme";
 
 export const App = () => {
   return (
     <ChakraProvider theme={theme}>
       <Box fontSize="md">
-        <Grid minH="100vh" templateColumns="200px 1fr">
+        <Grid
+          minH="100vh"
+          templateColumns={{ base: "90px 1fr", sm: "150px 1fr" }}
+        >
           <LeftMenu />
           <Flex width="100%" direction="column">
             <Flex mt={5} direction="row" justifyContent="end" mr={4}>
-              <Menu>
-                <MenuButton
-                  variant="ghost"
-                  as={Button}
-                  rightIcon={<ChevronDownIcon />}
-                >
-                  English
-                </MenuButton>
-                <MenuList minWidth="115px">
-                  <MenuItem>English</MenuItem>
-                  <MenuItem onClick={() => alert("Kagebunshin")}>
-                    Spanish
-                  </MenuItem>
-                </MenuList>
-              </Menu>
-              <ColorModeSwitcher justifySelf="flex-end" />
+              <TopButtons />
             </Flex>
-            <Intro />
+            <Flex pl={10} pr={10} direction="column" mt={12} align="center">
+              <Flex
+                fontSize={{ base: 12, sm: 15 }}
+                width={{ base: "auto", sm: "400px", lg: "700px" }}
+              >
+                <Router>
+                  <Intro path="/" />
+                  <Projects path="/projects" />
+                </Router>
+              </Flex>
+            </Flex>
           </Flex>
         </Grid>
       </Box>
