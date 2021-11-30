@@ -23,9 +23,6 @@ const LeftMenu = () => {
           <LeftMenuLink to="/projects" location={location}>
             Projects
           </LeftMenuLink>
-          <LeftMenuLink to="/resume" location={location}>
-            Resume
-          </LeftMenuLink>
           <LeftMenuLink to="/contact" location={location}>
             Contact
           </LeftMenuLink>
