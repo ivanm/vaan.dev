@@ -1,6 +1,8 @@
 import { Fragment } from "react";
 import { Text, Link, UnorderedList, ListItem } from "@chakra-ui/react";
-const Contact = () => (
+import { RouteComponentProps } from "@reach/router";
+
+const Contact = (props: RouteComponentProps) => (
   <Fragment>
     <Text mb={4}>You can find me on:</Text>
     <UnorderedList>
