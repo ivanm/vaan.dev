@@ -1,4 +1,5 @@
 const en: any = {
+  menu: { about: "About", projects: "Projects", contact: "Contact" },
   greeting: "Howdy!",
   text1:
     "My name is <1>Iván Mayoral</1>, I am a <3>Senior Software Engineer</3> with over <5>10</5> years of professional experience in Computer Science.",
