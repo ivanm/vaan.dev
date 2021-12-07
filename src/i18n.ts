@@ -5,7 +5,7 @@ import es from "./locales/es";
 
 const lng: string =
   localStorage.getItem("language") !== null
-    ? JSON.parse(localStorage.getItem("language"))
+    ? JSON.parse(`${localStorage.getItem("language")}`)
     : "en";
 i18n.use(initReactI18next).init({
   resources: {
@@ -14,7 +14,7 @@ i18n.use(initReactI18next).init({
   },
   lng,
   fallbackLng: "en",
-  debug: true,
+  // debug: true,
   interpolation: {
     escapeValue: false
   }

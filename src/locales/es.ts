@@ -5,7 +5,7 @@ const es: any = {
     text1:
       "Mi nombre es <1>Iván Mayoral</1>, soy <3>Senior Software Engineer</3> con más de <5>10</5> años de carrera profesional en Ciencias de la Computación.",
     text2:
-      "Vivo en <1>Ciudad de México</1> desde donde he estado trabajando de forma remota desde hace 9 años como contractor para empresas tecnológicas de USA: <3>GumGum</3> y <5>Pearl</5>",
+      "Vivo en <1>Ciudad de México</1> 🇲🇽 desde donde he estado trabajando de forma remota los últimos 9 años como contractor para empresas tecnológicas de USA: <3>GumGum</3> y <5>Pearl</5>",
     text3:
       "Me apasiona el Software Libre, Linux, UI/UX, Accesibilidad y React.",
     text4:

@@ -5,7 +5,7 @@ const en: any = {
     text1:
       "My name is <1>Iván Mayoral</1>, I am a <3>Senior Software Engineer</3> with over <5>10</5> years of professional experience in Computer Science.",
     text2:
-      "I live in <1>Mexico City</1> and have been working remotely for about 9 years as a contractor for US Tech Companies: <3>GumGum</3> and <5>Pearl</5>",
+      "I live in <1>Mexico City</1> 🇲🇽 where I have been working remotely for about 9 years as a contractor for US Tech Companies: <3>GumGum</3> and <5>Pearl</5>",
     text3:
       "I am passionate about Free Software, Linux, UI/UX, Accesibility, and React.",
     text4:
