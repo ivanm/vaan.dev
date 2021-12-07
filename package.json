@@ -1,7 +1,7 @@
 {
-  "name": "my-app",
+  "name": "vaan.dev",
   "homepage": "https://vaan.dev",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "@chakra-ui/icons": "^1.1.1",
