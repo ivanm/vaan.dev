@@ -4,7 +4,14 @@ import {
   Colors,
   ThemeComponents
 } from "@chakra-ui/react";
-import { mode, Styles } from "@chakra-ui/theme-tools";
+import {
+  mode,
+  Styles,
+  Breakpoints,
+  createBreakpoints
+} from "@chakra-ui/theme-tools";
+import type { Dict } from "@chakra-ui/utils";
+
 
 const DARK_LINK_COLOR = "#489d4f";
 const LIGHT_LINK_COLOR = "#267a24";
@@ -62,11 +69,19 @@ const components: ThemeComponents = {
   }
 };
 
+const breakpoints: Breakpoints<Dict> = createBreakpoints({
+  sm: "650px",
+  md: "700px",
+  lg: "950px",
+  xl: "1000px",
+});
+
 const customTheme = {
   config,
   colors,
   styles,
-  components
+  components,
+  breakpoints
 };
 
 const theme = extendTheme(customTheme);
