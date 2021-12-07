@@ -1,12 +1,13 @@
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 import { Button, Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import { ColorModeSwitcher } from "./ColorModeSwitcher";
 import { useTranslation } from "react-i18next";
+import { useLocalStorage } from "usehooks-ts";
 
 const TopButtons = () => {
   const { i18n } = useTranslation();
-  const [language, setLanguage] = useState("en");
+  const [language, setLanguage] = useLocalStorage("language", "en");
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
     setLanguage(lng);
