@@ -19,7 +19,7 @@ const LeftMenuLink = ({ to, children, location }: LeftMenuLinkProps) => {
   const isCurrent = location.pathname === to;
   const iconSize: number = 15;
 
-  let Icon: FC | null = null;
+  let Icon: FC = () => null;
   switch (to) {
     case "/":
       Icon = () =>
