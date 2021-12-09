@@ -11,11 +11,11 @@ const LeftMenu = () => {
     <Location>
       {({ location }) => (
         <Flex
-          fontSize={{ base: 10, sm: 15 }}
-          pl={{ base: 3, sm: 8 }}
+          fontSize={{ base: 15, sm: 20 }}
+          pl={{ base: 4, sm: 6 }}
           direction="column"
           pt="105px"
-          bg={colorMode === "dark" ? "black" : "gray.50"}
+          bg={colorMode === "dark" ? "black" : "gray.100"}
           borderRight="1px"
           borderColor={colorMode === "dark" ? "gray.800" : "gray.100"}
         >

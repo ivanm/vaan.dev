@@ -24,7 +24,7 @@ const config: ThemeConfig = {
 const styles: Styles = {
   global: props => ({
     body: {
-      background: mode("gray.50", "gray.900")(props),
+      background: mode("gray.100", "black")(props),
       color: mode("gray.900", "gray.50")(props)
     }
   })
@@ -70,10 +70,7 @@ const components: ThemeComponents = {
 };
 
 const breakpoints: Breakpoints<Dict> = createBreakpoints({
-  sm: "650px",
-  md: "700px",
-  lg: "950px",
-  xl: "1000px",
+  sm: "800px",
 });
 
 const customTheme = {

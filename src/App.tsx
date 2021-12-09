@@ -1,11 +1,7 @@
 import { Suspense } from "react";
-import { ChakraProvider, Box, Grid, Flex } from "@chakra-ui/react";
-import { Router } from "@reach/router";
-import Intro from "./Intro";
-import Projects from "./Projects";
-import Contact from "./Contact";
+import { ChakraProvider, Box, Grid } from "@chakra-ui/react";
 import LeftMenu from "./LeftMenu";
-import TopButtons from "./TopButtons";
+import Main from "./Main";
 import theme from "./theme";
 
 export const App = () => (
@@ -14,26 +10,13 @@ export const App = () => (
       <Box fontSize="md">
         <Grid
           minH="100vh"
-          templateColumns={{ base: "90px 1fr", sm: "150px 1fr" }}
+          templateColumns={{ base: "120px 1fr", sm: "165px 1fr" }}
+          width={{ base: "auto", sm: "800px" }}
+          marginRight={{ base: 0, sm: "auto" }}
+          marginLeft={{ base: 0, sm: "auto" }}
         >
           <LeftMenu />
-          <Flex width="100%" direction="column">
-            <Flex mt={5} direction="row" justifyContent="end" mr={4}>
-              <TopButtons />
-            </Flex>
-            <Flex pl={10} pr={10} direction="column" mt={12} align="center">
-              <Flex
-                fontSize={{ base: 12, sm: 15 }}
-                width={{ base: "auto", sm: "400px", lg: "700px" }}
-              >
-                <Router>
-                  <Intro path="/" />
-                  <Projects path="/projects" />
-                  <Contact path="/contact" />
-                </Router>
-              </Flex>
-            </Flex>
-          </Flex>
+          <Main />
         </Grid>
       </Box>
     </ChakraProvider>
