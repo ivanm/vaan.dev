@@ -71,6 +71,9 @@ const components: ThemeComponents = {
 
 const breakpoints: Breakpoints<Dict> = createBreakpoints({
   sm: "800px",
+  md: "900px",
+  lg: "1000px",
+  xl: "1200px",
 });
 
 const customTheme = {

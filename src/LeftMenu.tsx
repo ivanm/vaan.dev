@@ -16,8 +16,6 @@ const LeftMenu = () => {
           direction="column"
           pt="105px"
           bg={colorMode === "dark" ? "black" : "gray.100"}
-          borderRight="1px"
-          borderColor={colorMode === "dark" ? "gray.800" : "gray.100"}
         >
           <LeftMenuLink to="/" location={location}>
             <Trans i18nKey="menu.about">About</Trans>
