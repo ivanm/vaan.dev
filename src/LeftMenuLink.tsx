@@ -13,7 +13,7 @@ const LeftMenuLink = ({ to, children, location }: LeftMenuLinkProps) => {
   return (
     <Flex>
       {isCurrent ? (
-        <Flex align="center" fontSize="10" mb={7} mr={2}>
+        <Flex align="center" fontSize="10" mb={5} mr={2}>
           ᐅ
         </Flex>
       ) : null}
@@ -23,7 +23,7 @@ const LeftMenuLink = ({ to, children, location }: LeftMenuLinkProps) => {
         color={
           isCurrent ? (colorMode === "dark" ? "white" : "black") : undefined
         }
-        mb={6}
+        mb={5}
         ml={isCurrent ? 0 : 4}
       >
         {children}

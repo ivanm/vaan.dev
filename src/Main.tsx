@@ -15,7 +15,7 @@ const Main = () => {
       <Flex mt={5} direction="row" justifyContent="end" mr={4}>
         <TopButtons />
       </Flex>
-      <Flex pl={10} pr={10} direction="column" mt={12} align="center">
+      <Flex pl={12} pr={12} direction="column" mt={12} align="center">
         <Flex fontSize={{ base: 12, sm: 16 }} width="100%">
           <Router>
             <Intro path="/" />

@@ -12,7 +12,9 @@ const Contact = (props: RouteComponentProps) => {
       </Text>
       <UnorderedList>
         <ListItem>
-          <Link href="https://www.linkedin.com/in/imayoral/">LinkedIn</Link>
+          <Link href="https://www.linkedin.com/in/imayoral/" isExternal>
+            LinkedIn
+          </Link>
         </ListItem>
         <ListItem>
           <Link href="https://github.com/ivanm" isExternal>

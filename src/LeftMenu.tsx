@@ -11,7 +11,7 @@ const LeftMenu = () => {
     <Location>
       {({ location }) => (
         <Flex
-          fontSize={{ base: 15, sm: 20 }}
+          fontSize={{ base: 15, sm: 18 }}
           pl={{ base: 4, sm: 6 }}
           direction="column"
           pt="105px"
