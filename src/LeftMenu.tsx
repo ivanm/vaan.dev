@@ -20,6 +20,9 @@ const LeftMenu = () => {
           <LeftMenuLink to="/" location={location}>
             <Trans i18nKey="menu.about">About</Trans>
           </LeftMenuLink>
+          <LeftMenuLink to="/resume" location={location}>
+            <Trans i18nKey="menu.resume">Resume</Trans>
+          </LeftMenuLink>
           <LeftMenuLink to="/projects" location={location}>
             <Trans i18nKey="menu.projects">Projects</Trans>
           </LeftMenuLink>

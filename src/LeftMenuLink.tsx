@@ -7,6 +7,8 @@ import { IoCubeOutline } from "@react-icons/all-files/io5/IoCubeOutline";
 import { IoCubeSharp } from "@react-icons/all-files/io5/IoCubeSharp";
 import { IoChatbubbleEllipsesOutline } from "@react-icons/all-files/io5/IoChatbubbleEllipsesOutline";
 import { IoChatbubbleEllipsesSharp } from "@react-icons/all-files/io5/IoChatbubbleEllipsesSharp";
+import { BsBriefcaseFill } from "@react-icons/all-files/bs/BsBriefcaseFill";
+import { BsBriefcase } from "@react-icons/all-files/bs/BsBriefcase";
 
 interface LeftMenuLinkProps {
   to: string;
@@ -27,6 +29,14 @@ const LeftMenuLink = ({ to, children, location }: LeftMenuLinkProps) => {
           <BsPersonFill size={iconSize} />
         ) : (
           <BsPerson size={iconSize} />
+        );
+      break;
+    case "/resume":
+      Icon = () =>
+        isCurrent ? (
+          <BsBriefcaseFill size={iconSize} />
+        ) : (
+          <BsBriefcase size={iconSize} />
         );
       break;
     case "/projects":
