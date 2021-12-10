@@ -54,7 +54,7 @@ const Main = () => {
         overflowY="auto"
         height={window.innerHeight - 103}
       >
-        <Router style={{ width: "100%" }}>
+        <Router style={{ width: "100%" }} primary={false}>
           <Intro path="/" />
           <Resume path="/resume" />
           <Projects path="/projects" />
