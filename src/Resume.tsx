@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { Text, Flex, UnorderedList, ListItem, Link } from "@chakra-ui/react";
+import { Text, Flex, UnorderedList, ListItem } from "@chakra-ui/react";
 import { RouteComponentProps } from "@reach/router";
 import { useTranslation, Trans } from "react-i18next";
 import { Heading } from "@chakra-ui/react";

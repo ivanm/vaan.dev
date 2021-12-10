@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { Flex, useColorMode } from "@chakra-ui/react";
 import { Router } from "@reach/router";
 import { useTranslation } from "react-i18next";
@@ -11,6 +12,30 @@ import Resume from "./Resume";
 const Main = () => {
   const { colorMode } = useColorMode();
   useTranslation();
+
+  useEffect(() => {
+    resize();
+    window.addEventListener("resize", () => {
+      resize();
+    });
+
+    return () => {
+      window.removeEventListener("resize", resize);
+    };
+  }, []);
+
+  const [, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight
+  });
+
+  const resize = () => {
+    setWindowSize({
+      height: window.innerHeight,
+      width: window.innerWidth
+    });
+  };
+
   return (
     <Flex
       width="100%"
@@ -27,7 +52,7 @@ const Main = () => {
         mt={12}
         align="center"
         overflowY="auto"
-        height="calc(100vh - 103px)"
+        height={window.innerHeight - 103}
       >
         <Router style={{ width: "100%" }}>
           <Intro path="/" />
