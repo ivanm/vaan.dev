@@ -8,7 +8,7 @@ const Resume = (props: RouteComponentProps) => {
   useTranslation();
   return (
     <Fragment>
-      <Heading as="h2" mb={2} fontSize={23}>
+      <Heading as="h2" mb={5} fontSize={23}>
         <Trans i18nKey="resume.skills.header">Skills</Trans>
       </Heading>
       <Text>
@@ -45,10 +45,10 @@ const Resume = (props: RouteComponentProps) => {
         </Trans>
       </Text>
       <hr style={{ marginBottom: "20px" }} />
-      <Heading as="h2" mb={2} fontSize={23}>
+      <Heading as="h2" mb={5} fontSize={23}>
         <Trans i18nKey="resume.education.header">Education</Trans>
       </Heading>
-      <Flex justify="space-between" mb={4}>
+      <Flex justify="space-between" mb={2}>
         <Flex direction="column">
           <Trans i18nKey="resume.education.text">
             <Heading as="h2" size="md">
@@ -66,7 +66,7 @@ const Resume = (props: RouteComponentProps) => {
         </Flex>
       </Flex>
       <hr style={{ marginBottom: "20px" }} />
-      <Heading as="h2" mb={2} fontSize={23}>
+      <Heading as="h2" mb={5} fontSize={23}>
         <Trans i18nKey="resume.experience.header">Experience</Trans>
       </Heading>
       <Flex justify="space-between">

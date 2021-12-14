@@ -47,11 +47,23 @@ const en: any = {
   projects: {
     text1:
       "This are some of the <1>Open Source</1> projects that I'm currently working on my free time:",
-    coinlog: "<0>coinlog:</0> A configurable cryptocurrency price tracker.",
-    nftExplorer:
-      "<0>nft-explorer:</0> A visualization tool for NFT Collections. An alternative to OpenSea.",
-    nftAutoTool:
-      "<0>nft-autotool:</0> NFT Generator script using layers with different rarities."
+    coinlog: {
+      label: "Coinlog",
+      description: "Configurable cryptocurrency price tracker."
+    },
+    nftExplorer: {
+      label: "NFT Explorer",
+      description:
+        "Visualizer for full NFT Collections. An alternative to OpenSea."
+    },
+    nftAutoTool: {
+      label: "NFT Autotool",
+      description: "NFT Generator script using layers with different rarities."
+    },
+    vaanDev: {
+      label: "vaan.dev",
+      description: "This page, my personal portfolio, is also open source."
+    }
   },
   contact: {
     text1: "You can find me on:"

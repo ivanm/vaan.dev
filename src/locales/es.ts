@@ -47,12 +47,25 @@ const es: any = {
   projects: {
     text1:
       "Estos son algunos de los proyectos <1>Open Source</1> en los que he trabajado en mi tiempo libre:",
-    coinlog: "<0>coinlog:</0> Un tracker configurable de criptomonedas.",
-    nftExplorer:
-      "<0>nft-explorer:</0> Herramienta de visualización para colecciones de NFT. Alternativa a OpenSea.",
-    nftAutoTool:
-      "<0>nft-autotool:</0> Script generador de NFTs usando capas con diferentes rarezas."
+    coinlog: {
+      label: "Coinlog",
+      description: "Tracker configurable de criptomonedas."
+    },
+    nftExplorer: {
+      label: "NFT Explorer",
+      description:
+        "Visualizador de colleciones NFT. Alternativa a OpenSea."
+    },
+    nftAutoTool: {
+      label: "NFT Autotool",
+      description: "Script generador de NFT usando capas de diferentes rarezas."
+    },
+    vaanDev: {
+      label: "vaan.dev",
+      description: "Esta página, mi portafolio personal, también es Open Source."
+    }
   },
+
   contact: {
     text1: "Puedes encontrarme en:"
   }
