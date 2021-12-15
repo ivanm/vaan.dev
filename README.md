@@ -2,9 +2,9 @@
 
 ## About
 
-Personal portfolo of Ivan Mayoral. Main features include:
+Personal portfolio of Iván Mayoral. Main features include:
 
-- Theme Switch (Dark / Ligth)
+- Theme Switch (Dark / Light)
 - Language Selection
 - Responsive Design
 - Accessibility Friendly
