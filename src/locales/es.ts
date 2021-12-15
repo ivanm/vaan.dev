@@ -48,13 +48,12 @@ const es: any = {
     text1:
       "Estos son algunos de los proyectos <1>Open Source</1> en los que he trabajado en mi tiempo libre:",
     coinlog: {
-      label: "Coinlog",
+      label: "Coinlog [beta]",
       description: "Tracker configurable de criptomonedas."
     },
     nftExplorer: {
       label: "NFT Explorer",
-      description:
-        "Visualizador de colleciones NFT. Alternativa a OpenSea."
+      description: "Visualizador de colleciones NFT. Alternativa a OpenSea."
     },
     nftAutoTool: {
       label: "NFT Autotool",
@@ -62,7 +61,7 @@ const es: any = {
     },
     vaanDev: {
       label: "vaan.dev",
-      description: "Esta página, mi portafolio personal, también es Open Source."
+      description: "Esta página. Mi portafolio personal."
     }
   },
 

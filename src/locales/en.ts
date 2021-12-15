@@ -48,7 +48,7 @@ const en: any = {
     text1:
       "This are some of the <1>Open Source</1> projects that I'm currently working on my free time:",
     coinlog: {
-      label: "Coinlog",
+      label: "Coinlog [beta]",
       description: "Configurable cryptocurrency price tracker."
     },
     nftExplorer: {
@@ -62,7 +62,7 @@ const en: any = {
     },
     vaanDev: {
       label: "vaan.dev",
-      description: "This page, my personal portfolio, is also open source."
+      description: "This page. My personal portfolio."
     }
   },
   contact: {
