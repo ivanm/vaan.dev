@@ -5,7 +5,7 @@
 Personal portfolio of Iván Mayoral. Main features include:
 
 - Theme Switch (Dark / Light)
-- Language Selection
+- Multiple Languages (English / Spanish)
 - Responsive Design
 - Accessibility Friendly
 
