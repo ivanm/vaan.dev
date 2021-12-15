@@ -1,5 +1,13 @@
-This project was bootstrapped with
-[Create React App](https://github.com/facebook/create-react-app).
+# vaan.dev
+
+## About
+
+Personal portfolo of Ivan Mayoral. Main features include:
+
+- Theme Switch (Dark / Ligth)
+- Language Selection
+- Responsive Design
+- Accessibility Friendly
 
 ## Available Scripts
 
@@ -12,6 +20,10 @@ Runs the app in the development mode.<br /> Open
 
 The page will reload if you make edits.<br /> You will also see any lint errors
 in the console.
+
+### `yarn deploy`
+
+Deploys to Github pages. Needs `yarn build` to be executed first.
 
 ### `yarn test`
 
