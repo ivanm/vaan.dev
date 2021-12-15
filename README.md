@@ -9,6 +9,13 @@ Personal portfolo of Ivan Mayoral. Main features include:
 - Responsive Design
 - Accessibility Friendly
 
+Built with:
+
+- TypeScript
+- React 17
+- i18next
+- Chakra UI
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -20,10 +27,6 @@ Runs the app in the development mode.<br /> Open
 
 The page will reload if you make edits.<br /> You will also see any lint errors
 in the console.
-
-### `yarn deploy`
-
-Deploys to Github pages. Needs `yarn build` to be executed first.
 
 ### `yarn test`
 
@@ -43,6 +46,10 @@ ready to be deployed!
 See the section about
 [deployment](https://facebook.github.io/create-react-app/docs/deployment) for
 more information.
+
+### `yarn deploy`
+
+Deploys to Github pages. Needs `yarn build` to be executed first.
 
 ### `yarn eject`
 
