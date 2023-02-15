@@ -12,7 +12,7 @@ Personal portfolio of Iván Mayoral. Main features include:
 Built with:
 
 - TypeScript
-- React 17
+- React 18
 - i18next
 - Chakra UI
 
