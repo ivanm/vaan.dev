@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { Flex, Link, useColorMode } from "@chakra-ui/react";
-import { Link as ReachLink } from "@reach/router";
+import { Link as ReachLink } from "react-router-dom";
 import { BsPerson } from "@react-icons/all-files/bs/BsPerson";
 import { BsPersonFill } from "@react-icons/all-files/bs/BsPersonFill";
 import { IoCubeOutline } from "@react-icons/all-files/io5/IoCubeOutline";
@@ -9,14 +9,15 @@ import { IoChatbubbleEllipsesOutline } from "@react-icons/all-files/io5/IoChatbu
 import { IoChatbubbleEllipsesSharp } from "@react-icons/all-files/io5/IoChatbubbleEllipsesSharp";
 import { BsBriefcaseFill } from "@react-icons/all-files/bs/BsBriefcaseFill";
 import { BsBriefcase } from "@react-icons/all-files/bs/BsBriefcase";
+import { useLocation } from 'react-router-dom';
 
 interface LeftMenuLinkProps {
   to: string;
   children: React.ReactNode;
-  location: Location;
 }
 
-const LeftMenuLink = ({ to, children, location }: LeftMenuLinkProps) => {
+const LeftMenuLink = ({ to, children, }: LeftMenuLinkProps) => {
+  const location = useLocation();
   const { colorMode } = useColorMode();
   const isCurrent = location.pathname === to;
   const iconSize: number = 15;

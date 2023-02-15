@@ -1,12 +1,10 @@
-import { Fragment } from "react";
-import { Text, Link, UnorderedList, ListItem } from "@chakra-ui/react";
-import { RouteComponentProps } from "@reach/router";
+import { Box, Text, Link, UnorderedList, ListItem } from "@chakra-ui/react";
 import { useTranslation, Trans } from "react-i18next";
 
-const Contact = (props: RouteComponentProps) => {
+const Contact = () => {
   useTranslation();
   return (
-    <Fragment>
+    <Box w="100%">
       <Text mb={4}>
         <Trans i18nKey="contact.text1">You can find me on:</Trans>
       </Text>
@@ -32,7 +30,7 @@ const Contact = (props: RouteComponentProps) => {
           </Link>
         </ListItem>
       </UnorderedList>
-    </Fragment>
+    </Box>
   );
 };
 export default Contact;

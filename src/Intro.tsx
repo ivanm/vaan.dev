@@ -1,12 +1,10 @@
-import { Fragment } from "react";
-import { Text, Link } from "@chakra-ui/react";
-import { RouteComponentProps } from "@reach/router";
+import { Box, Text, Link } from "@chakra-ui/react";
 import { useTranslation, Trans } from "react-i18next";
 
-const Intro = (props: RouteComponentProps) => {
+const Intro = () => {
   useTranslation();
   return (
-    <Fragment>
+    <Box w="100%">
       <Text fontSize={18} mb={4}>
         <Trans i18nKey="intro.greeting">
           Howdy!
@@ -45,7 +43,7 @@ const Intro = (props: RouteComponentProps) => {
           first early jobs.
         </Trans>
       </Text>
-    </Fragment>
+    </Box>
   );
 };
 export default Intro;

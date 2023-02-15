@@ -1,13 +1,11 @@
-import { Fragment } from "react";
-import { Text, Flex, UnorderedList, ListItem } from "@chakra-ui/react";
-import { RouteComponentProps } from "@reach/router";
+import { Box, Text, Flex, UnorderedList, ListItem } from "@chakra-ui/react";
 import { useTranslation, Trans } from "react-i18next";
 import { Heading } from "@chakra-ui/react";
 
-const Resume = (props: RouteComponentProps) => {
+const Resume = () => {
   useTranslation();
   return (
-    <Fragment>
+    <Box w="100%">
       <Heading as="h2" mb={5} fontSize={23}>
         <Trans i18nKey="resume.skills.header">Skills</Trans>
       </Heading>
@@ -127,7 +125,7 @@ const Resume = (props: RouteComponentProps) => {
           <ListItem>Item 7</ListItem>
         </Trans>
       </UnorderedList>
-    </Fragment>
+    </Box>
   );
 };
 export default Resume;

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Flex, useColorMode } from "@chakra-ui/react";
-import { Router } from "@reach/router";
+import { Routes, Route } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 import TopButtons from "./TopButtons";
@@ -26,13 +26,13 @@ const Main = () => {
 
   const [, setWindowSize] = useState({
     width: window.innerWidth,
-    height: window.innerHeight
+    height: window.innerHeight,
   });
 
   const resize = () => {
     setWindowSize({
       height: window.innerHeight,
-      width: window.innerWidth
+      width: window.innerWidth,
     });
   };
 
@@ -54,12 +54,12 @@ const Main = () => {
         overflowY="auto"
         height={window.innerHeight - 103}
       >
-        <Router style={{ width: "100%" }} primary={false}>
-          <Intro path="/" />
-          <Resume path="/resume" />
-          <Projects path="/projects" />
-          <Contact path="/contact" />
-        </Router>
+        <Routes>
+          <Route path="/" element={<Intro />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </Flex>
     </Flex>
   );

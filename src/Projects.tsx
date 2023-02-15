@@ -1,12 +1,10 @@
-import { Fragment } from "react";
-import { Flex, Heading, Text, Link } from "@chakra-ui/react";
-import { RouteComponentProps } from "@reach/router";
+import { Box, Flex, Heading, Text, Link } from "@chakra-ui/react";
 import { useTranslation, Trans } from "react-i18next";
 
-const Projects = (props: RouteComponentProps) => {
+const Projects = () => {
   useTranslation();
   return (
-    <Fragment>
+    <Box w="100%">
       <Text mb={7}>
         <Trans i18nKey="projects.text1">
           This are some of the
@@ -142,7 +140,7 @@ const Projects = (props: RouteComponentProps) => {
           </Text>
         </Flex>
       </Flex>
-    </Fragment>
+    </Box>
   );
 };
 export default Projects;
