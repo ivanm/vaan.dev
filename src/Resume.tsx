@@ -69,6 +69,33 @@ const Resume = () => {
       </Heading>
       <Flex justify="space-between">
         <Flex direction="column">
+          <Trans i18nKey="resume.experience.sirona.headers">
+            <Heading as="h2" size="md">
+              Sirona Medical
+            </Heading>
+            <Heading as="h3" size="sm" mb={2}>
+              Senior Software Engineer
+            </Heading>
+          </Trans>
+        </Flex>
+        <Flex>
+          <Text fontSize={13} textTransform="uppercase" fontWeight="bold">
+            <Trans i18nKey="resume.experience.sirona.dates">
+              July 2020 - June 2021
+            </Trans>
+          </Text>
+        </Flex>
+      </Flex>
+      <UnorderedList mb={4} fontSize="sm">
+        <Trans i18nKey="resume.experience.sirona.items">
+          <ListItem>Item 0</ListItem>
+          <ListItem>Item 1</ListItem>
+          <ListItem>Item 2</ListItem>
+          <ListItem>Item 3</ListItem>
+        </Trans>
+      </UnorderedList>
+      <Flex justify="space-between">
+        <Flex direction="column">
           <Trans i18nKey="resume.experience.pearl.headers">
             <Heading as="h2" size="md">
               Pearl

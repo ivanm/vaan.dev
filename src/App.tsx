@@ -11,7 +11,7 @@ export const App = () => (
         <Grid
           minH="100vh"
           templateColumns={{ base: "120px 1fr", sm: "165px 1fr" }}
-          width={{ base: "auto", sm: "800px" }}
+          width={{ base: "auto", sm: "900px" }}
           marginRight={{ base: 0, sm: "auto" }}
           marginLeft={{ base: 0, sm: "auto" }}
         >
