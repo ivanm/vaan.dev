@@ -8,9 +8,9 @@ const es: any = {
   intro: {
     greeting: "¡Hola!",
     text1:
-      "Me llamo <1>Iván Mayoral</1>, soy <3>Senior Software Engineer</3> con más de once años de experiencia profesional en Ciencias de la Computación y especializado en Desarollo Front-End <5>(React + Vue)</5>. Me apasiona crear interfaces de usuario intuitivas que sean fáciles de usar sin sacrificar eficiencia.",
+      "Me llamo <1>Iván Mayoral</1>, soy <3>Senior Software Engineer</3> con más de once años de experiencia profesional en Ciencias de la Computación y especializado en Desarollo Front-End <5>(React/Vue + TypeScript)</5>. Me apasiona crear interfaces de usuario intuitivas que sean fáciles de usar sin sacrificar eficiencia.",
     text2:
-      "He participado en diversas industrias, incluyendo <1>educación</1>, <3>publicidad</3> y <5>salud</5>. En los ultimos años he trabajado como contratista para compañias Tech de USA, aprovechando mis habilidades para resolver problemas para producir souciones a la medida del cliente y que hagan felices a los usuarios.",
+      "He participado en diversas industrias, incluyendo <1>educación</1>, <3>publicidad</3> y <5>salud</5>. Viviendo en Ciudad de México 🇲🇽 he trabajado como contratista remoto para compañias Tech de USA, aprovechando mis habilidades para resolver problemas para producir souciones a la medida del cliente y que hagan felices a los usuarios.",
     text3:
       "Mi experiencia en <1>Back-End</1> me permite trabajar con muchos tipos diferentes de equipos y proveer integraciones entre API y Front-End con soluciones de alto nivel y sin fricción.",
     text4:
@@ -32,19 +32,19 @@ const es: any = {
         dates: "Marzo 2022 - Noviembre 2022",
         headers: "<0>Sirona Medical</0><1>Software Engineer</1>",
         items:
-          "<0>Desarollo de componentes UI en JavaScript para aplicaciones de radiología. (ReactJS/GraphQL)</0><1>Desarollo de software de reconocimiento de voz y herramientas para procesar datos de usuarios mediante comandos. (ReactJS/Slate)</1><2>Diseño de arquitectura y endopints para aplicaciones REST (Python/Django/Postgres/Docker)</2><3>Escritura de especificaciones tecnicas para documentos regulatorios de FDA.</3>",
+          "<0>Desarrollo de componentes UI en Javascript UI para aplicaciones de radiología usando React y GraphQL, creando interfaces faciles de usar y diseñando funciones interactivas que permitiesen facil navegacion y presentación precisa de imágenes medicas y datos generados de IA.</0><1>Contribución al desarollo de software de reconocimiento de voz y herramientas para procesar datos generados por el usuario usando React y Slate. Optimización del tiempo de reconocimiento del contenido en el rango de milisegundos para asegurar una experiencia optima de usuario.</1><2>Diseño de arquitectura e implementación de sistemas de endpoints para aplicaciones REST con Python, Django, Postgre y Docker, creando sistemas escalables que pudiesen manejar grandes cantidades de información y tráfico, manteniendo rendimiento optimo y seguridad.</2><3>Contribución a especificaciones tecnicas de documentos regulatorios de FDA y colaboración con equipos de regulacion y product managers para asegurar que los requerimentos técnicos para las normas regulatorias se cumplieran y que la documentación fuera precisa y completa.</3>",
       },
       pearl: {
         dates: "Julio 2020 - Junio 2021",
         headers: "<0>Pearl</0><1>Senior Software Engineer</1>",
         items:
-          "<0>Desarollo de Interfaces de Usuario para marcadores de IA en imágenes dentales.</0><1>Desarollo de componentes para Dashboards para productos de Machine Learning.</1><2>Desarollo de herramientas internas y prototipos (TypeScript, React, Redux, Vue, Vue).</2><3>Desarollo e implemantación de APIs para productos dentales (AWS, Node, Postgres).</3>",
+          "<0>Desarollo de interfaces de usuario para marcadores de IA en imágenes dentales, diseñando y construyendo aplicaciones web que permitiesen a dentistas y a otros profesionales de la medicina identificar y analizar imagenes dentales usando tecnologias como TypeScript, React y Vue.</0><1>Desarollo de componentes para dashboards de productos de machine learning con insights y visualiciones provenientes de modelos de IA, permitiendo a los usuarios interpretar y entender rapidamente datos asociados a potenciales enfermedades en los dientes. Se usó TypeScript, React y Vue.</1><2>Desarollo de herramientas internas para agilizar nuevos flujos de trabajo y creacion de prototipos para probar y experimentar con nuevas funciones y tecnologias en colaboración con otros equipos.</2><3>Diseño e implementación de APIs para productos dentales con AWS, Node y Postgres,usando integraciones escalables y eficientes para varios productos dentales que aseguraron rendimiento optimo e integridad de los datos de los pacientes.</3>",
       },
       gumgum: {
         dates: "Abril 2013 - Abril 2020",
         headers: "<0>GumGum</0><1>Senior Software Engineer</1>",
         items:
-          "<0>Frontend: Desarollo de aplicaciones internas en React (Ad Manager, Publisher Manager) e integración con APIs REST (React/Redux, ES6, Ramda, JAMStack).</0><1>Backend/Frontend: Mantenimiento de Dashboard internos (PHP, Codeigniter, React, Vue).</1><2>Backend/Frontend: Desarollo de aplicación en React (Publisher Center) para administrar ads (React, Redux, PHP, Codeigniter).</2><3>Diseño y programación de Enpoints API REST con Laravel y autentificación JWT.</3><4>Orquestación en Docker para productos nuevos y legacy (Docker, Docker Compose, Drone CI).</4><5>Mantenimiento y configuración de servidores LAMP.</5><6>Implementación y configuración de maquinas virtuales en Vagrant para proveer configuración común para todos los miembros del equipo (VirtualBox, Ansible, Puppet).</6><7>Diseño de Bases de Datos para productos internos con MySQL, PostgreSQL.</7>",
+          "<0>Desarollo de aplicaciones web internas en React e integración con APIs REST.</0><1>Desarollo de aplicaciones en React y Vue para manejo de anuncios en sitios administrados por la compañia e implementacion de integraciones con sistemas internos usando tecnologias como PHP y CodeIgniter.</1><2>Diseño y programación de APIs REST con Laravel y JWT.</2><3>Implementacion y configuración de maquinas virtuales en Vagrant y contenedores Docker para proveer ambientes compartidos para todos los miembros del equipo y estandarizar el desarollo y testing.</3>",
       },
     },
   },

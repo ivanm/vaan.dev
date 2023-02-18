@@ -8,9 +8,9 @@ const en: any = {
   intro: {
     greeting: "Howdy!",
     text1:
-      "I'm <1>Ivan Mayoral</1>, a <3>Senior Software Engineer</3> with eleven years of professional experience in Computer Science, specializing in Front-End development <5>(React + Vue)</5>. I am passionate about creating intuitive UI interfaces that are easy to use without sacrificing efficiency.",
+      "I'm <1>Ivan Mayoral</1>, a <3>Senior Software Engineer</3> with more than ten years of professional experience in Computer Science, specializing in Front-End development <5>(React/Vue + TypeScript)</5>. I am passionate about creating intuitive UI interfaces that are easy to use without sacrificing efficiency.",
     text2:
-      "I have participated in diverse industries, including <1>education</1>, <3>advertising</3>, and <5>healthcare</5>. For the last nine years, I have worked as a contractor for US Tech Companies, leveraging problem-solving skills to deliver solutions that meet client needs and make users happy.",
+      "I have participated in diverse industries, including <1>education</1>, <3>advertising</3>, and <5>healthcare</5>. I am based in Mexico City 🇲🇽, and in recent years I have worked as a remote contractor for US Tech Companies, leveraging problem-solving skills to deliver solutions that meet client needs and make users happy.",
     text3:
       "My experience in <1>Back-End</1> development enables me to work with many types of teams and provide seamless integrations between API and Front-End with frictionless high-level solutions.",
     text4:
@@ -32,19 +32,19 @@ const en: any = {
         dates: "March 2022 - November 2022",
         headers: "<0>Sirona Medical</0><1>Software Engineer</1>",
         items:
-          "<0>Development of Javascript UI Components for Radiology Applications. (ReactJS/GraphQL)</0><1>Development of Speech-To-Text Software and tools for processing user generated data. (ReactJS/Slate)</1><2>Architecture and Endpoint Design for REST Applications (Python/Django/Postgres/Docker)</2><3>Contributed to Technical Specifications for FDA Regulatory Documents.</3>",
+          "<0>Developed Javascript UI components for Radiology Applications using React and GraphQL, creating user-friendly interfaces and designing interactive features that allow for easy navigation and accurate display of medical images and AI-Generated data.</0><1>Contributed to developing Speech-To-Text software and tools for processing user-generated data using React and Slate. Optimized recognition and translation of content in the range of milliseconds to ensure an optimal best user experience.</1><2>Designed the architecture and endpoint system for REST applications using Python, Django, Postgres, and Docker, creating a scalable and efficient system that could handle large amounts of data and traffic while maintaining optimal performance and security.</2><3>Contributed to the technical specifications for FDA regulatory documents and collaborated with regulatory affairs teams and product managers to ensure that technical requirements for regulatory compliance were met, and that documentation was accurate and comprehensive.</3>",
       },
       pearl: {
         dates: "July 2020 - June 2021",
         headers: "<0>Pearl</0><1>Senior Software Engineer</1>",
         items:
-          "<0>Development of User Interfaces for AI Markers on Dental Imagery.</0><1>Development of Dashboard Components for Machine Learning products.</1><2>Development of Internal Tools and Prototypes (TypeScript, React, Redux, Vue, Vue).</2><3>API Design and implementation for Dental products (AWS, Node, Postgres).</3>",
+          "<0>Developed user interfaces for AI markers on dental imagery, designing and building web applications that allow dentists and other medical professionals to quickly identify and analyze dental images using technologies such as TypeScript, React, and Vue.</0><1>Developed dashboard components for machine learning products with insights and visualizations for machine learning models, allowing users to quickly interpret and understand complex data related to potential sickness on the teeth. Used TypeScript, React, and Vue.</1><2>Developed internal tools to streamline new workflows and created prototypes to test and experiment with new features and technologies in collaboration with other teams.</2><3>Designed and implemented APIs for dental products using AWS, Node, and Postgres with scalable and efficient integrations for various dental products that ensured optimal performance and integrity of patient data.</3>",
       },
       gumgum: {
         dates: "April 2013 - April 2020",
         headers: "<0>GumGum</0><1>Senior Software Engineer</1>",
         items:
-          "<0>Frontend: Development of internal React Applications (Ad Manager, Publisher Manager) and integration with REST APIs (React/Redux, ES6, Ramda, JAMStack).</0><1>Backend/Frontend: Maintenance of internal company Dashboard (PHP, Codeigniter, React, Vue).</1><2>Backend/Frontend: Development a React Application (Publisher Center) for managing ads on their sites (React, Redux, PHP, Codeigniter).</2><3>Design and programming of internal REST API Endpoints with Laravel and JWT.</3><4>Docker orchestration of legacy and new products (Docker, Docker Compose, Drone CI).</4><5>LAMP servers maintenance and configuration.</5><6>Implementation and configuration of Vagrant virtual machines for providing a common environment between all the team members (VirtualBox, Ansible, Puppet).</6><7>Database design for several internal products with MySQL, PostgreSQL.</7>",
+          "<0>Developed internal web applications and integrated them with REST APIs using React and Vue.</0><1>Developed React and Vue applications for managing ads on company websites and implemented integrations with internal systems using technologies such as PHP and Codeigniter.</1><2>Designed and programmed internal REST API endpoints using Laravel and JWT.</2><3>Implemented and configured Vagrant virtual machines and Docker containers to provide a shared environment for all team members and a standardized environment for development and testing.</3>",
       },
     },
   },
