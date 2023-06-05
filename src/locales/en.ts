@@ -19,7 +19,7 @@ const en: any = {
   resume: {
     skills: {
       header: "Skills",
-      text: "<0>Frontend</0><1>JavaScript, TypeScript, Flow, CSS3, HTML5, React.js (Redux,Hooks), Vue.js (Vuex, Nuxt).</1><2>Backend</2><3>SQL, Node.js, GraphQL, Express, PHP7, Laravel, Ruby on Rails, Solidity.</3><4>Tooling</4><5>Git, Git Flow, Vim, Docker, Docker Compose, Drone CI, Jenkins, Ansible, Puppet, Vagrant, VirtualBox, Bash, Linux (Ubuntu, Debian, Arch), AWS. </5><6>Other</6><7>Agile, MVC, REST, Object-oriented programming, Functional Programming, Microservices, Internationalization, Continuous Integration, Smart Contracts on Blockchain.</7>",
+      text: "<0>Frontend</0><1> JavaScript, TypeScript, CSS3, HTML5, React.js (Redux, Recoil, Hooks), Vue.js (Vuex, Nuxt).</1><2>Backend</2><3>Node.js, SQL(Mysql, Postgres), Express, PHP7, Laravel, Ruby on Rails, Solidity.</3><4>Tooling</4><5>Docker, Jenkins, Puppet, Vagrant, VirtualBox, Linux, AWS.</5><6>Other</6><7>Agile, MVC, REST, Object-oriented programming, Functional Programming, Microservices.</7>",
     },
     education: {
       header: "Education",
@@ -32,19 +32,19 @@ const en: any = {
         dates: "March 2022 - November 2022",
         headers: "<0>Sirona Medical</0><1>Software Engineer</1>",
         items:
-          "<0>Developed UI components for radiology web applications with React and GraphQL, creating user-friendly interfaces and designing interactive features that allow for easy navigation and accurate display of medical imagery and AI-Generated data.</0><1>Contributed to Speech-To-Text software and tools for processing diagnosis data from radiologists with React and Slate. Optimized the time of processing to ensure an optimal user experience of text and voice commands.</1><2>Designed and implemented new endpoints for REST applications using Python, Django, Postgres, and Docker, creating scalable and efficient APIs that could handle large amounts of patient data.</2><3>Contributed to the technical specifications for FDA regulatory documents and collaborated with regulatory affairs teams and product managers to ensure that technical requirements for regulatory compliance were met, and that documentation was accurate and comprehensive.</3>",
+          "<0>Engineered intuitive UI components for radiology web applications using React/Recoil/GraphQL. Enhanced UX through the design of new features for accurate display of medical imagery and AI-Generated data.</0><1>Enhanced the efficiency of Speech-To-Text tools for processing diagnosis data, optimizing processing time and enabling seamless user experience in text and voice command through the use of macros.</1><2>Architected scalable REST applications using Python, Django, Postgres, and Docker. These efficient APIs allowed for large volume patient data handling.</2><3>Assisted with the preparation of technical specifications for FDA regulatory documents, ensuring technical compliance and accuracy of the documentation in collaboration with regulatory affairs teams and product managers</3>",
       },
       pearl: {
         dates: "July 2020 - June 2021",
         headers: "<0>Pearl</0><1>Senior Software Engineer</1>",
         items:
-          "<0>Developed user interfaces for AI markers on dental imagery, building web applications that allow dentists and other medical professionals to quickly identify and analyze X-Rays and the related treatment data, using TypeScript, React, and Vue.</0><1>Developed dashboard components for machine learning products with insights and visualizations allowing users to quickly interpret and understand complex data related to potential sickness on the teeth. Used TypeScript, React, and Vue.</1><2>Developed internal tools to streamline new workflows and created prototypes to test and experiment with new features in collaboration with other teams.</2><3>Designed and implemented APIs for dental products using AWS, Node, and Postgres with scalable and efficient integrations for various features that ensured optimal performance and integrity of patient data.</3>",
+          "<0>Led the development of user interfaces for AI markers on dental imagery, enabling rapid identification and analysis of X-Rays and related treatment data using TypeScript, React, and Vue.</0><1>Constructed dashboard components for machine learning products with insights and visualizations. This facilitated users' understanding and interpretation of complex data related to potential dental ailments.</1><2>Innovated new workflows through the development of internal tools, fostering collaboration across teams to test and experiment with new feature prototypes.</2><3>Orchestrated AWS, Node, and Postgres to design and implement APIs for dental products, ensuring optimal performance and integrity of patient data.</3>",
       },
       gumgum: {
         dates: "April 2013 - April 2020",
         headers: "<0>GumGum</0><1>Senior Software Engineer</1>",
         items:
-          "<0>Developed internal web applications and integrated them with REST APIs using React and Vue.</0><1>Developed React and Vue applications for managing ads on company websites and implemented integrations with internal systems using PHP and Codeigniter.</1><2>Designed and programmed internal REST API endpoints using Laravel and JWT.</2><3>Implemented and configured Vagrant virtual machines and Docker containers to provide a shared environment for all team members and a standardized environment for development and testing.</3>",
+          "<0>Developed and integrated a range of internal web applications with REST APIs using React and Vue, improving overall system efficiency, revamping old legacy applications to modern stacks.</0><1>Built React and Vue applications for managing ads on company websites, implementing integrations with internal systems using PHP and Codeigniter, that served thousands of websites per day.</1><2>Designed and implemented REST API endpoints with JWT, focusing on security and seamless integration.</2><3>Configured Vagrant virtual machines and Docker containers, establishing a standardized, shared environment for development and testing, that drastically improved team collaboration.</3>",
       },
     },
   },

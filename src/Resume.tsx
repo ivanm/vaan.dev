@@ -15,30 +15,27 @@ const Resume = () => {
             Frontend
           </Heading>
           <Text mb={2} fontSize="sm">
-            JavaScript, TypeScript, CSS3, HTML5, JAMstack, React.js (Redux,
+            JavaScript, TypeScript, CSS3, HTML5, React.js (Redux, Recoil
             Hooks), Vue.js (Vuex, Nuxt).
           </Text>
           <Heading as="h3" size="sm" mb={2}>
             Backend
           </Heading>
           <Text mb={2} fontSize="sm">
-            SQL, Node.js, Express, PHP7, Laravel, Ruby on Rails, Solidity.
+            Node.js, SQL(Mysql, Postgres), Express, PHP7, Laravel, Ruby on Rails, Solidity.
           </Text>
           <Heading as="h3" size="sm" mb={2}>
             Tooling
           </Heading>
           <Text mb={2} fontSize="sm">
-            Git, Git Flow, Vim, Docker, Docker Compose, Drone CI, Jenkins,
-            Ansible, Puppet, Vagrant, VirtualBox, Bash, Linux (Ubuntu, Debian,
-            Arch), AWS.
+            Docker, Jenkins, Puppet, Vagrant, VirtualBox, Linux, AWS.
           </Text>
           <Heading as="h3" size="sm" mb={2}>
             Other
           </Heading>
           <Text mb={7} fontSize="sm">
             Agile, MVC, REST, Object-oriented programming, Functional
-            Programming, Microservices, Internationalization, Continuous
-            Integration, Smart Contracts on Blockchain.
+            Programming, Microservices.
           </Text>
         </Trans>
       </Text>
@@ -74,7 +71,7 @@ const Resume = () => {
               Sirona Medical
             </Heading>
             <Heading as="h3" size="sm" mb={2}>
-              Senior Software Engineer
+              Software Engineer
             </Heading>
           </Trans>
         </Flex>
