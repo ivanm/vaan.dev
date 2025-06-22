@@ -20,11 +20,6 @@ const Contact = () => {
           </Link>
         </ListItem>
         <ListItem>
-          <Link href="https://twitter.com/vaan" isExternal>
-            Twitter
-          </Link>
-        </ListItem>
-        <ListItem>
           <Link href="https://medium.com/@ivanmgg" isExternal>
             Medium
           </Link>

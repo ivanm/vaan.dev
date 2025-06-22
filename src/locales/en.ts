@@ -8,7 +8,7 @@ const en: any = {
   intro: {
     greeting: "Howdy!",
     text1:
-      "I'm <1>Ivan Mayoral</1>, a <3>Senior Software Engineer</3> with more than ten years of professional experience in Computer Science, specializing in Front-End development <5>(React/Vue + TypeScript)</5> and Backend <7>(Node.js)</7>. I am passionate about creating intuitive UI interfaces that are easy to use without sacrificing efficiency.",
+      "I'm <1>Ivan Mayoral</1>, a <3>Senior Software Engineer</3> with 15 years of professional experience in Computer Science, specializing in Front-End development <5>(React/Vue + TypeScript)</5> and Backend <7>(Node.js)</7>. I am passionate about creating intuitive UI interfaces that are easy to use without sacrificing efficiency.",
     text2:
       "I have participated in diverse industries, including <1>education</1>, <3>advertising</3>, and <5>healthcare</5>. I am based in Mexico City 🇲🇽, and in recent years I have worked as a remote contractor for US Tech Companies, leveraging problem-solving skills to deliver solutions that meet client needs and make users happy.",
     text3:
@@ -30,7 +30,7 @@ const en: any = {
       header: "Experience",
       soundhound: {
         dates: "August 2023 - Current",
-        headers: "<0>Soundhound</0><1>Senior Software Engineer</1>",
+        headers: "<0>SoundHound AI</0><1>Senior Software Engineer</1>",
         items:
           "<0>Designed and implemented full-stack apps with Next.js and TypeScript for AI-powered restaurant systems, integrated with real-time WebSocket streams. Improvements led to better usability, faster customer throughput, and customizable features per client.</0><1>Built internal tools including a Minikube-based local testbed, a Web UI for simulating calls with AI systems, and debugging utilities, boosting team efficiency.</1><2>Rewrote a legacy real-time system handling 8,000+ AI-generated customer messages/day. Deployed via Kubernetes (Redis, Kafka, WebSockets) with a custom stress-testing suite simulating varied load profiles.</2>",
       },

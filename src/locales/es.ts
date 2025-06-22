@@ -8,7 +8,7 @@ const es: any = {
   intro: {
     greeting: "¡Hola!",
     text1:
-      "Me llamo <1>Iván Mayoral</1>, soy <3>Senior Software Engineer</3> con más de once años de experiencia profesional en Ciencias de la Computación y especializado en Desarollo Front-End <5>(React/Vue + TypeScript) y Backend (Node.js)</5>. Me apasiona crear interfaces de usuario intuitivas que sean fáciles de usar sin sacrificar eficiencia.",
+      "Me llamo <1>Iván Mayoral</1>, soy <3>Senior Software Engineer</3> con 15 años de experiencia profesional en Ciencias de la Computación y especializado en Desarollo Front-End <5>(React/Vue + TypeScript)</5> y Backend <7>(Node.js)</7>. Me apasiona crear interfaces de usuario intuitivas que sean fáciles de usar sin sacrificar eficiencia.",
     text2:
       "He participado en diversas industrias, incluyendo <1>educación</1>, <3>publicidad</3> y <5>salud</5>. Viviendo en Ciudad de México 🇲🇽 he trabajado como contratista remoto para compañias Tech de USA, aprovechando mis habilidades para resolver problemas para producir souciones a la medida del cliente y que hagan felices a los usuarios.",
     text3:
@@ -30,7 +30,7 @@ const es: any = {
       header: "Experiencia",
       soundhound: {
         dates: "Agosto 2023 - Actualidad",
-        headers: "<0>Soundhound</0><1>Ingeniero de Software Senior</1>",
+        headers: "<0>SoundHound AI</0><1>Ingeniero de Software Senior</1>",
         items:
           "<0>Diseñé e implementé aplicaciones full-stack con Next.js y TypeScript para sistemas de restaurantes impulsados por IA, integrados con flujos de WebSocket en tiempo real. Las mejoras resultaron en mejor usabilidad, mayor velocidad de atención al cliente y funcionalidades personalizables por cliente.</0><1>Construí herramientas internas, incluyendo un entorno de pruebas local basado en Minikube, una interfaz web para simular llamadas con sistemas de IA y utilidades de depuración, mejorando la eficiencia del equipo.</1><2>Reescribí un sistema heredado en tiempo real que manejaba más de 8,000 mensajes diarios generados por IA. Desplegado con Kubernetes (Redis, Kafka, WebSockets) y una suite de pruebas de estrés personalizada que simula perfiles de carga variados.</2>",
       },
