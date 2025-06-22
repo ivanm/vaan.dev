@@ -12,7 +12,7 @@ const Intro = () => {
         <Trans i18nKey="intro.text1">
           I'm <b>Ivan Mayoral</b>, a <b>Senior Software Engineer</b> with eleven
           years of professional experience in Computer Science, specializing in
-          Front-End Development <b>(Vue+React)</b>. I am passionate about
+    Front-End Development <b>(Vue+React)</b> <b>(Node.js)</b>. I am passionate about
           creating intuitive UI interfaces that are easy to use without
           sacrificing efficiency.
         </Trans>

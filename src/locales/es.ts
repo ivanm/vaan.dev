@@ -8,7 +8,7 @@ const es: any = {
   intro: {
     greeting: "¡Hola!",
     text1:
-      "Me llamo <1>Iván Mayoral</1>, soy <3>Senior Software Engineer</3> con más de once años de experiencia profesional en Ciencias de la Computación y especializado en Desarollo Front-End <5>(React/Vue + TypeScript)</5>. Me apasiona crear interfaces de usuario intuitivas que sean fáciles de usar sin sacrificar eficiencia.",
+      "Me llamo <1>Iván Mayoral</1>, soy <3>Senior Software Engineer</3> con más de once años de experiencia profesional en Ciencias de la Computación y especializado en Desarollo Front-End <5>(React/Vue + TypeScript) y Backend (Node.js)</5>. Me apasiona crear interfaces de usuario intuitivas que sean fáciles de usar sin sacrificar eficiencia.",
     text2:
       "He participado en diversas industrias, incluyendo <1>educación</1>, <3>publicidad</3> y <5>salud</5>. Viviendo en Ciudad de México 🇲🇽 he trabajado como contratista remoto para compañias Tech de USA, aprovechando mis habilidades para resolver problemas para producir souciones a la medida del cliente y que hagan felices a los usuarios.",
     text3:
@@ -19,7 +19,7 @@ const es: any = {
   resume: {
     skills: {
       header: "Habilidades",
-      text: "<0>Frontend</0><1>JavaScript, TypeScript, Flow, CSS3, HTML5, React.js (Redux,Hooks), Vue.js (Vuex, Nuxt).</1><2>Backend</2><3>SQL, Node.js, GraphQL, Express, PHP7, Laravel, Ruby on Rails, Solidity.</3><4>Tooling</4><5>Git, Git Flow, Vim, Docker, Docker Compose, Drone CI, Jenkins, Ansible, Puppet, Vagrant, VirtualBox, Bash, Linux (Ubuntu, Debian, Arch), AWS. </5><6>Otros</6><7>Agile, MVC, REST, Object-oriented programming, Functional Programming, Microservices, Internationalization, Continuous Integration, Smart Contracts on Blockchain.</7>",
+      text: "<0>Frontend</0><1> TypeScript, JavaScript, React.js (Hooks, Redux), Vue.js (Vuex, Nuxt), HTML5, CSS3.</1><2>Backend</2><3>Node.js, Clojure, GraphQL, Express, SQL (Postgres, MySQL), MongoDB.</3><4>Infraestructura y Herramientas</4><5>Docker, Docker Compose, Kubernetes (K8s), Git, AWS, Jenkins, Drone CI, Ansible, Linux, Vim.</5><6>Arquitecturas y Metodologías</6><7>Programación Funcional, Programación Orientada a Objetos, Microservicios, REST, MVC.</7>",
     },
     education: {
       header: "Educación",
@@ -28,17 +28,23 @@ const es: any = {
     },
     experience: {
       header: "Experiencia",
+      soundhound: {
+        dates: "Agosto 2023 - Actualidad",
+        headers: "<0>Soundhound</0><1>Ingeniero de Software Senior</1>",
+        items:
+          "<0>Diseñé e implementé aplicaciones full-stack con Next.js y TypeScript para sistemas de restaurantes impulsados por IA, integrados con flujos de WebSocket en tiempo real. Las mejoras resultaron en mejor usabilidad, mayor velocidad de atención al cliente y funcionalidades personalizables por cliente.</0><1>Construí herramientas internas, incluyendo un entorno de pruebas local basado en Minikube, una interfaz web para simular llamadas con sistemas de IA y utilidades de depuración, mejorando la eficiencia del equipo.</1><2>Reescribí un sistema heredado en tiempo real que manejaba más de 8,000 mensajes diarios generados por IA. Desplegado con Kubernetes (Redis, Kafka, WebSockets) y una suite de pruebas de estrés personalizada que simula perfiles de carga variados.</2>",
+      },
       sirona: {
         dates: "Marzo 2022 - Noviembre 2022",
-        headers: "<0>Sirona Medical</0><1>Software Engineer</1>",
+        headers: "<0>Sirona Medical</0><1>Ingeniero de Software</1>",
         items:
-          "<0>Desarrollo de componentes UI en Javascript UI para aplicaciones de radiología usando React y GraphQL, creando interfaces faciles de usar y diseñando funciones interactivas que permitiesen facil navegacion y presentación precisa de imágenes medicas y datos generados de IA.</0><1>Contribución al desarollo de software de reconocimiento de voz y herramientas para procesar datos generados por el usuario usando React y Slate. Optimización del tiempo de reconocimiento del contenido en el rango de milisegundos para asegurar una experiencia optima de usuario.</1><2>Diseño de arquitectura e implementación de sistemas de endpoints para aplicaciones REST con Python, Django, Postgre y Docker, creando sistemas escalables que pudiesen manejar grandes cantidades de información y tráfico, manteniendo rendimiento optimo y seguridad.</2><3>Contribución a especificaciones tecnicas de documentos regulatorios de FDA y colaboración con equipos de regulacion y product managers para asegurar que los requerimentos técnicos para las normas regulatorias se cumplieran y que la documentación fuera precisa y completa.</3>",
+          "<0>Creé componentes de UI en React.js usando Recoil y GraphQL para interfaces de radiología, permitiendo la visualización precisa de diagnósticos generados por IA.</0><1>Optimizé flujos de trabajo de reconocimiento de voz mediante macros personalizadas y encadenamiento de comandos, reduciendo la latencia y mejorando la captura de datos clínicos.</1><2>Desarrollé APIs REST escalables en Django (Docker, Postgres) para la ingesta de datos de pacientes a gran escala con endpoints optimizados.</2><3>Co-redacté documentación compatible con la FDA detallando la arquitectura del sistema y los flujos de datos para aprobación regulatoria.</3>",
       },
       pearl: {
         dates: "Julio 2020 - Junio 2021",
-        headers: "<0>Pearl</0><1>Senior Software Engineer</1>",
+        headers: "<0>Pearl</0><1>Ingeniero de Software Senior</1>",
         items:
-          "<0>Desarollo de interfaces de usuario para marcadores de IA en imágenes dentales, diseñando y construyendo aplicaciones web que permitiesen a dentistas y a otros profesionales de la medicina identificar y analizar imagenes dentales usando tecnologias como TypeScript, React y Vue.</0><1>Desarollo de componentes para dashboards de productos de machine learning con insights y visualiciones provenientes de modelos de IA, permitiendo a los usuarios interpretar y entender rapidamente datos asociados a potenciales enfermedades en los dientes. Se usó TypeScript, React y Vue.</1><2>Desarollo de herramientas internas para agilizar nuevos flujos de trabajo y creacion de prototipos para probar y experimentar con nuevas funciones y tecnologias en colaboración con otros equipos.</2><3>Diseño e implementación de APIs para productos dentales con AWS, Node y Postgres,usando integraciones escalables y eficientes para varios productos dentales que aseguraron rendimiento optimo e integridad de los datos de los pacientes.</3>",
+          "<0>Construí componentes de UI mejorados con IA para imágenes dentales usando TypeScript, React y Vue, permitiendo análisis de rayos X en tiempo real y planificación de tratamientos.</0><1>Desarrollé APIs seguras y escalables (Node.js, AWS, Postgres) para el procesamiento de datos de imágenes y registros de pacientes con alto rendimiento bajo carga.</1>",
       },
       gumgum: {
         dates: "Abril 2013 - Abril 2020",
