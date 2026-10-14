@@ -1,0 +1,278 @@
+/* Résumé (/resume, /es/resume): the Plinth grid and type scale. Dates and section names sit in
+   columns 1–3, the content in 4–12; one column on phones. Print gives a black-on-white document. */
+.cv {
+  padding: calc(var(--head) + 72px) 0 var(--sec);
+}
+.cv-head {
+  align-items: end;
+  margin-bottom: 88px;
+}
+.cv-intro {
+  grid-column: 1 / span 8;
+  min-width: 0;
+}
+.cv .line {
+  max-width: 46ch;
+  margin-bottom: 24px;
+}
+html[lang="es-MX"] .cv .line {
+  max-width: 50ch;
+}
+.cv-contact {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 0;
+  font-size: 15px;
+  color: var(--muted);
+}
+.cv-contact li + li::before {
+  content: "·";
+  margin: 0 10px;
+  color: var(--rule);
+}
+.cv-contact a {
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.cv-contact a:hover {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+}
+.cv-actions {
+  grid-column: 9 / -1;
+  display: flex;
+  justify-content: flex-end;
+}
+.cv-sec + .cv-sec {
+  margin-top: 72px;
+}
+.cv-sec .label {
+  margin-bottom: 8px;
+}
+.cv-entry {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--hair);
+}
+.cv-entry:last-child {
+  border-bottom: 0;
+}
+.cv-dates {
+  grid-column: 1 / span 3;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--muted);
+  padding-top: 3px;
+}
+.cv-body {
+  grid-column: 4 / -1;
+  min-width: 0;
+  margin: 0;
+}
+.cv h3 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.cv h3 a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+.cv h3 a .arrow {
+  color: var(--accent);
+}
+.cv h3 a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+}
+.cv-org {
+  font-weight: 400;
+  color: var(--muted);
+}
+.cv-role {
+  margin: 2px 0 0;
+  font-size: 15px;
+  color: var(--muted);
+}
+.cv-body ul {
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+  max-width: 72ch;
+}
+.cv-body li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.cv-body li + li {
+  margin-top: 8px;
+}
+.cv-body li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.8em;
+  width: 8px;
+  height: 1px;
+  background: var(--accent);
+}
+/* Skill names are h3 for the outline but sit in the dates column at body size. */
+.cv .cv-skill h3.cv-dates {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: var(--ink);
+  padding-top: 0;
+}
+.cv-skill .cv-body {
+  font-size: 15px;
+  line-height: 1.6;
+  padding-top: 2px;
+  color: var(--muted);
+}
+
+@media (max-width: 860px) {
+  .cv {
+    padding-top: calc(var(--head) + 32px);
+  }
+  .cv-head {
+    margin-bottom: 56px;
+  }
+  .cv-contact {
+    flex-direction: column;
+    gap: 2px;
+  }
+  .cv-contact li + li::before {
+    display: none;
+  }
+  .cv-intro,
+  .cv-actions,
+  .cv-dates,
+  .cv-body {
+    grid-column: 1 / -1;
+  }
+  .cv-actions {
+    justify-content: flex-start;
+    margin-top: 28px;
+  }
+  .cv-dates {
+    padding-top: 0;
+    margin-bottom: 4px;
+    font-size: 13px;
+  }
+  .cv .cv-skill h3.cv-dates {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .cv-sec + .cv-sec {
+    margin-top: 56px;
+  }
+  .cv-entry {
+    padding: 20px 0;
+  }
+}
+
+@media print {
+  @page {
+    margin: 14mm 16mm;
+  }
+  :root,
+  :root[data-theme="light"] {
+    --bg: #fff;
+    --ink: #111;
+    --muted: #444;
+    --hair: #d6d6d6;
+    --rule: #999;
+    --accent: #7a5a30;
+    --pad: 0px;
+    /* The page declares color-scheme: dark; without this Chrome paints the page margins dark. */
+    color-scheme: light;
+  }
+  html,
+  body {
+    background: #fff;
+    font-size: 10pt;
+  }
+  .top,
+  footer,
+  .cv-actions {
+    display: none;
+  }
+  .cv {
+    padding: 0;
+  }
+  .cv .wrap {
+    max-width: none;
+  }
+  .cv-head {
+    margin-bottom: 18pt;
+  }
+  .cv-intro {
+    grid-column: 1 / -1;
+  }
+  .cv h1 {
+    font-size: 26pt;
+    margin-bottom: 6pt;
+  }
+  .cv .line {
+    font-size: 11pt;
+    max-width: none;
+    margin-bottom: 6pt;
+  }
+  .cv .eyebrow {
+    margin-bottom: 8pt;
+    font-size: 9pt;
+  }
+  .cv-contact,
+  .cv-role,
+  .cv-dates,
+  .cv-body li,
+  .cv-skill .cv-body {
+    font-size: 9.5pt;
+  }
+  .cv h3 {
+    font-size: 11.5pt;
+  }
+  .cv .cv-skill h3.cv-dates {
+    font-size: 9.5pt;
+  }
+  .cv h3 .arrow {
+    display: none;
+  }
+  .cv-sec + .cv-sec {
+    margin-top: 14pt;
+  }
+  .cv-sec .label {
+    margin-bottom: 0;
+    font-size: 9pt;
+  }
+  .cv-entry {
+    padding: 8pt 0;
+    break-inside: avoid;
+  }
+  .cv-body ul {
+    margin-top: 5pt;
+    max-width: none;
+  }
+  .cv-body li + li {
+    margin-top: 3pt;
+  }
+  .cv-body li::before {
+    background: #111;
+  }
+  a {
+    text-decoration: none;
+  }
+}

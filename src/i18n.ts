@@ -2,22 +2,20 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import en from "./locales/en";
 import es from "./locales/es";
+import { langFromPath } from "./lib/lang";
 
-const lng: string =
-  localStorage.getItem("language") !== null
-    ? JSON.parse(`${localStorage.getItem("language")}`)
-    : "en";
+// The URL decides the language (/es/... is Spanish). The GitHub Pages 404.html redirect
+// script in public/index.html restores the real path before this module runs.
 i18n.use(initReactI18next).init({
   resources: {
     en: { translation: en },
-    es: { translation: es }
+    es: { translation: es },
   },
-  lng,
+  lng: langFromPath(window.location.pathname),
   fallbackLng: "en",
-  // debug: true,
   interpolation: {
-    escapeValue: false
-  }
+    escapeValue: false,
+  },
 });
 
 export default i18n;

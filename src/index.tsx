@@ -1,16 +1,16 @@
-import { ColorModeScript } from "@chakra-ui/react";
 import * as React from "react";
 import { createRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 import { App } from "./App";
+import "./i18n";
 import reportWebVitals from "./reportWebVitals";
 import * as serviceWorker from "./serviceWorker";
-import { BrowserRouter } from "react-router-dom";
-import "./i18n";
+import "./styles/plinth.css";
+import "./styles/resume.css";
 
 const root = createRoot(document.getElementById("root")!);
 root.render(
   <React.StrictMode>
-    <ColorModeScript />
     <BrowserRouter>
       <App />
     </BrowserRouter>

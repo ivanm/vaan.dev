@@ -2,29 +2,108 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Homepage of Iván Mayoral"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+      Route meta (title, description, canonical, hreflang, og/twitter, html lang) is the English
+      home page here. scripts/prerender-routes.js (npm "postbuild") copies this file to
+      build/es/, build/resume/ and build/es/resume/ with each route's values, so crawlers and link
+      previews get the right meta without JS; src/components/usePageMeta.ts keeps it in sync in
+      the browser.
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <title>vaan.dev — independent software, Mexico City</title>
+    <meta name="description" content="vaan.dev makes independent software in Mexico City. No. 01 is DummyForge: design your own action figure in the browser and print it at home." />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#111214" />
+    <link rel="canonical" href="https://vaan.dev/" />
+    <link rel="alternate" hreflang="en" href="https://vaan.dev/" />
+    <link rel="alternate" hreflang="es-MX" href="https://vaan.dev/es/" />
+    <link rel="alternate" hreflang="x-default" href="https://vaan.dev/" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>vaan.dev</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="vaan.dev" />
+    <meta property="og:title" content="vaan.dev — independent software, Mexico City" />
+    <meta property="og:description" content="vaan.dev makes independent software in Mexico City. No. 01 is DummyForge: design your own action figure in the browser and print it at home." />
+    <meta property="og:url" content="https://vaan.dev/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="es_MX" />
+    <meta property="og:image" content="https://vaan.dev/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Debug-Man 1.0, a black action figure made with DummyForge, on a bronze plinth, beside the DummyForge name." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@vaan" />
+    <meta name="twitter:title" content="vaan.dev — independent software, Mexico City" />
+    <meta name="twitter:description" content="vaan.dev makes independent software in Mexico City. No. 01 is DummyForge: design your own action figure in the browser and print it at home." />
+    <meta name="twitter:image" content="https://vaan.dev/og.png" />
+
+    <link rel="icon" href="%PUBLIC_URL%/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" sizes="32x32" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&display=swap" rel="stylesheet" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://vaan.dev/#org",
+            "name": "vaan.dev",
+            "url": "https://vaan.dev/",
+            "logo": "https://vaan.dev/logo512.png",
+            "email": "hello@vaan.dev",
+            "founder": { "@id": "https://vaan.dev/#ivan" },
+            "sameAs": ["https://x.com/vaan"]
+          },
+          {
+            "@type": "Person",
+            "@id": "https://vaan.dev/#ivan",
+            "name": "Ivan Mayoral",
+            "jobTitle": "Software engineer",
+            "url": "https://vaan.dev/",
+            "homeLocation": { "@type": "Place", "name": "Mexico City, Mexico" },
+            "sameAs": ["https://www.linkedin.com/in/imayoral/", "https://x.com/vaan"]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://vaan.dev/#site",
+            "url": "https://vaan.dev/",
+            "name": "vaan.dev",
+            "inLanguage": ["en", "es-MX"],
+            "publisher": { "@id": "https://vaan.dev/#org" }
+          },
+          {
+            "@type": "WebApplication",
+            "name": "DummyForge",
+            "url": "https://dummyforge.com",
+            "description": "Design your own action figure in the browser. Print it at home.",
+            "applicationCategory": "DesignApplication",
+            "operatingSystem": "Web browser",
+            "inLanguage": ["en", "es"],
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+            "publisher": { "@id": "https://vaan.dev/#org" }
+          }
+        ]
+      }
+    </script>
+
+    <script>
+      // Theme before first paint: dark by default, light only when the viewer chose it.
+      (function () {
+        try {
+          if (localStorage.getItem("vaan-theme") === "light") {
+            document.documentElement.dataset.theme = "light";
+            document.querySelector("meta[name=color-scheme]").content = "light";
+            document.querySelector("meta[name=theme-color]").content = "#ECE8E1";
+          }
+        } catch (e) {}
+      })();
+    </script>
+
     <!-- Start Single Page Apps for GitHub Pages -->
     <script type="text/javascript">
       // Single Page Apps for GitHub Pages
@@ -39,7 +118,7 @@
       // the single page app to route accordingly.
       (function(l) {
         if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
+          var decoded = l.search.slice(1).split('&').map(function(s) {
             return s.replace(/~and~/g, '&')
           }).join('?');
           window.history.replaceState(null, null,
@@ -48,40 +127,33 @@
         }
       }(window.location))
     </script>
-    <style>
-      * {
-        scrollbar-width: auto;
-        scrollbar-color: #6e6e6e #4f4f4f;
-      }
-
-      *::-webkit-scrollbar {
-        width: 7px;
-      }
-
-      *::-webkit-scrollbar-track {
-        background: #4f4f4f;
-      }
-
-      *::-webkit-scrollbar-thumb {
-        background-color: #6e6e6e;
-        border-radius: 10px;
-        border: 0px solid #ffffff;
-      }
-  </style>
     <!-- End Single Page Apps for GitHub Pages -->
+
+    <script>
+      // The turntable poster is the home page's largest image: fetch it before the bundle runs.
+      (function (p) {
+        if (!/^\/(es\/?)?$/.test(p)) return;
+        var l = document.createElement("link");
+        l.rel = "preload";
+        l.as = "image";
+        l.href = "%PUBLIC_URL%/media/turn/f000.webp";
+        l.setAttribute("imagesrcset", "%PUBLIC_URL%/media/turn-s/f000.webp 600w, %PUBLIC_URL%/media/turn/f000.webp 840w");
+        l.setAttribute("imagesizes", "(max-width: 860px) 200px, 600px");
+        l.setAttribute("fetchpriority", "high");
+        document.head.appendChild(l);
+      })(window.location.pathname);
+    </script>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>
+      <div style="max-width: 640px; margin: 0 auto; padding: 48px 16px; font: 17px/1.55 Archivo, system-ui, sans-serif; color: #ece7df; background: #111214">
+        <p style="margin: 0 0 8px; font-size: 13px; color: #c4a47a">vaan.dev · Independent software, Mexico City</p>
+        <h1 style="margin: 0 0 12px; font-size: 44px; line-height: 1">DummyForge</h1>
+        <p style="margin: 0 0 20px">Design your own action figure in the browser. Print it at home. Public beta · Free · EN / ES.</p>
+        <p style="margin: 0 0 32px"><a href="https://dummyforge.com" style="color: #ece7df">Open DummyForge at dummyforge.com</a></p>
+        <p style="margin: 0; font-size: 15px; color: #a39d93">vaan.dev is Ivan Mayoral, a software engineer in Mexico City. <a href="mailto:hello@vaan.dev" style="color: #ece7df">hello@vaan.dev</a> · <a href="https://www.linkedin.com/in/imayoral/" style="color: #ece7df">LinkedIn</a> · <a href="https://x.com/vaan" style="color: #ece7df">X</a></p>
+      </div>
+    </noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>

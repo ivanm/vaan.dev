@@ -2,19 +2,22 @@
 
 ## About
 
-Personal portfolio of Iván Mayoral. Main features include:
+vaan.dev, the studio site of Ivan Mayoral ("Plinth" design). Main features include:
 
-- Theme Switch (Dark / Light)
-- Multiple Languages (English / Spanish)
-- Responsive Design
-- Accessibility Friendly
+- DummyForge turntable: 120 pre-rendered frames in `public/media/turn` (desktop) and
+  `public/media/turn-s` (phone), drag / touch / arrow keys, reduced motion respected
+- Dark theme by default, light theme on request
+- English at `/`, Spanish (es-MX) at `/es/`; résumé at `/resume/` and `/es/resume/`
+  (data in `src/data/resume.ts`)
+- Per-route static HTML for crawlers and link previews (`scripts/prerender-routes.js`,
+  run automatically after `build`)
 
 Built with:
 
 - TypeScript
-- React 18
+- React 18 + React Router 6
 - i18next
-- Chakra UI
+- Plain CSS (`src/styles/`)
 
 ## Available Scripts
 

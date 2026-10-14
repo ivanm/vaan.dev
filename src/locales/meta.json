@@ -1,0 +1,14 @@
+{
+  "en": {
+    "homeTitle": "vaan.dev — independent software, Mexico City",
+    "homeDescription": "vaan.dev makes independent software in Mexico City. No. 01 is DummyForge: design your own action figure in the browser and print it at home.",
+    "resumeTitle": "Ivan Mayoral — Résumé · vaan.dev",
+    "resumeDescription": "Résumé of Ivan Mayoral, software engineer in Mexico City: 15+ years across frontend and backend, founder of DummyForge."
+  },
+  "es": {
+    "homeTitle": "vaan.dev — software independiente, Ciudad de México",
+    "homeDescription": "vaan.dev hace software independiente en la Ciudad de México. El No. 01 es DummyForge: diseña tu propia figura de acción en el navegador e imprímela en casa.",
+    "resumeTitle": "Ivan Mayoral — Currículum · vaan.dev",
+    "resumeDescription": "Currículum de Ivan Mayoral, ingeniero de software en la Ciudad de México: más de 15 años en frontend y backend, fundador de DummyForge."
+  }
+}
