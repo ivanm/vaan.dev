@@ -11,9 +11,11 @@ export default function Footer() {
       <div className="wrap">
         <div className="foot">
           <div className="reach">
-            <a className="mail" href={`mailto:${person.email}`}>
-              {person.email}
-            </a>
+            {person.email ? (
+              <a className="mail" href={`mailto:${person.email}`}>
+                {person.email}
+              </a>
+            ) : null}
             <ul className="social" aria-label={t("footer.social")}>
               <li>
                 <a href={person.linkedin} rel="noopener noreferrer" aria-label={t("footer.linkedin")}>

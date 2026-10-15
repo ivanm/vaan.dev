@@ -32,7 +32,8 @@ export const person = {
   name: "Ivan Mayoral",
   title: { en: "Software engineer", es: "Ingeniero de software" } as Text,
   place: { en: "Mexico City", es: "Ciudad de México" } as Text,
-  email: "hello@vaan.dev",
+  // Shown once hello@vaan.dev is set up on Proton Mail.
+  email: null as string | null,
   linkedin: "https://www.linkedin.com/in/imayoral/",
   x: "https://x.com/vaan",
   site: "https://vaan.dev",

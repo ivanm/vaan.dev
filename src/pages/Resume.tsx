@@ -25,9 +25,11 @@ export default function Resume() {
             <h1 className="wide">{person.name}</h1>
             <p className="line">{person.summary[lang]}</p>
             <ul className="cv-contact" aria-label={t("resume.contact")}>
-              <li>
-                <a href={`mailto:${person.email}`}>{person.email}</a>
-              </li>
+              {person.email ? (
+                <li>
+                  <a href={`mailto:${person.email}`}>{person.email}</a>
+                </li>
+              ) : null}
               <li>
                 <a href={person.linkedin} rel="noopener">
                   linkedin.com/in/imayoral

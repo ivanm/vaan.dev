@@ -568,6 +568,11 @@ footer {
   padding: 0 0 0 20px;
   border-left: 1px solid var(--rule);
 }
+.reach > .social:first-child {
+  padding-left: 0;
+  border-left: 0;
+  margin-left: -9px; /* optical: icon buttons are 36px with an 18px glyph */
+}
 .social a {
   display: inline-flex;
   align-items: center;
